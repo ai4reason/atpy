@@ -1,21 +1,9 @@
 # **ATPy** #
 
-Python Library for ATP Projects.
+Python Library ATP Projects (see examples/README.Enigma.md)
 
-## Quick Install
+## Warning ##
 
-   $ pip install . --user
-
-## Developers
-
-   $ pip install -e . --user
-
-## Credits
-
-Development of this software prototype was supported by: 
-
-+ ERC Consolidator grant no. 649043 *AI4REASON*
-+ ERC Starting grant no. 714034 *SMART*
-+ FWF grant P26201
-+ Cost Action CA15123 *EUTypes*
+This is now **OBSOLETE**.  Please see separate `enigma` and `grackle`
+repositories.
 

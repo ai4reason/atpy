@@ -1,5 +1,4 @@
 import subprocess
-import os
 from subprocess import STDOUT
 
 #PERF = "perf stat -e task-clock:up,page-faults:up,instructions:u"
@@ -38,9 +37,7 @@ def run(f_problem, proto, limit, f_out=None, ebinary=None, eargs=None):
    cmd0 = cmd(f_problem, proto, limit, ebinary, eargs)
    if f_out:
       out = file(f_out,"w")
-      env0 = dict(os.environ)
-      env0["OMP_NUM_THREADS"] = "1"
-      subprocess.call(cmd0, shell=True, stdout=out, stderr=STDOUT, env=env0)
+      subprocess.call(cmd0, shell=True, stdout=out, stderr=STDOUT)
       out.close()
       return True
    else:
